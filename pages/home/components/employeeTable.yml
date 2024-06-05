@@ -1,0 +1,308 @@
+id: '17162028455520.36476564831896363'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 17
+      h: 182
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: 200
+        widthUnit: px
+        heightValue: 750
+        heightUnit: px
+      grow: '3'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 2
+      w: 24
+      h: 182
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: 200
+        widthUnit: px
+        heightValue: 750
+        heightUnit: px
+      grow: '3'
+      shrink: '0'
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  data: '{{actions.fetchEmployees.data}}'
+  name: employeeTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Employees
+  showLoading:
+    withData: true
+    dataValue: '{{actions.fetchEmployees.loading}}'
+    value: false
+  serverSidePagination: false
+  limit: '17'
+actions:
+  smartTableRowSelect:
+    - action: '17159343650760.2508516454378613'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowClick: []
+  uiOnRowDoubleClick: []
+  smartTablePageSelect: []
+  uiOnPageSizeChange: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
+  uiOnCellChangeTrigger: []
+slots:
+  - id: '17162028455520.7708380560088344'
+    name: columns
+    children:
+      - id: '17162028455520.2595841197841502'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString7
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 0
+        slots: []
+      - id: '17162028455520.2945079146089806'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString8
+          prop: first_name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 1
+        slots: []
+      - id: '17162028455520.9269244116057467'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString10
+          prop: last_name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 2
+        slots: []
+      - id: '17162028455520.4363257438050443'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString11
+          prop: email
+          primaryKey: false
+          inputType: email
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 3
+        slots: []
+      - id: '17162028455520.715673834403713'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString12
+          prop: country
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 4
+        slots: []
+      - id: '17162028455520.9035199041799173'
+        definitionId: atomicSelect
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect4
+          prop: gender
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          widthMode: auto
+          width: 120
+          options:
+            value:
+              - value: Male
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.4932032635521739'
+              - value: Female
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.5044064988582466'
+              - value: Non-binary
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.024671789816729017'
+              - value: Polygender
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.17524953730264636'
+              - value: Genderfluid
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.8743213365638951'
+              - value: Bigender
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.4362670912558442'
+              - value: Genderqueer
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.18579919632685304'
+              - value: Agender
+                color: warning-dark
+                __UIBAKERY__SYSTEM_ID__: '17159258450800.44577410171378373'
+            dataValue: |-
+              [
+                {
+                  value: 'Male',
+                  color: 'primary'
+                },
+                {
+                  value: 'Female',
+                  color: 'success'
+                },
+                {
+                  value: 'Non-binary',
+                  color: 'warning'
+                },
+                {
+                  value: 'Polygender',
+                  color: 'danger'
+                },
+                {
+                  value: 'Genderfluid',
+                  color: 'info'
+                },
+                {
+                  value: 'Bigender',
+                  color: 'primary-dark'
+                },
+                {
+                  value: 'Genderqueer',
+                  color: 'success-dark'
+                },
+                {
+                  value: 'Agender',
+                  color: 'warning-dark'
+                }
+              ]
+            withData: false
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 5
+        slots: []
+      - id: '17162028455520.7209790320249558'
+        definitionId: atomicButton
+        styles:
+          xl:
+            iconPlacement: center
+        properties:
+          name: atomicButton2
+          text: Assign task
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: id
+          title: Task
+          sortable: false
+          widthMode: fixed
+          width: '50'
+          pinColumn: right
+          appearance:
+            value: outline
+            dataValue: filled
+            withData: false
+          icon:
+            value: plus
+            dataValue: star-outline
+            withData: false
+          alignment: left
+        parentSlotId: '17162028455520.7708380560088344'
+        index: 6
+        actions:
+          buttonClick:
+            - action: '17159313070140.6980342977690244'
+              paramCode: ''
+              index: 0
+        slots: []

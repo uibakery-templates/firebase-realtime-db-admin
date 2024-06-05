@@ -1,0 +1,58 @@
+id: '17159418511320.291606378988591'
+kind: workflow
+name: handleUnassignTaskButtonClick
+nameConfigured: true
+steps:
+  - id: '17159418557100.7656317678092917'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17159422593340.6561086364840645'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17159369305190.23097078020157968'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleUnassignTaskButtonClick.name}}"?
+  showSuccessToast: false
+  successToast: >-
+    Action "{{actions.handleUnassignTaskButtonClick.name}}" successfully
+    executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleUnassignTaskButtonClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+parentId: '17159260281600.19106133925096191'
+selected: true
+configured: true

@@ -1,0 +1,41 @@
+id: '17159297002970.10133144626994461'
+definitionId: avatar
+parentSlotId: '17159296701750.9646055157657414'
+styles:
+  xl:
+    gridItem:
+      x: 20
+      y: 0
+      w: 4
+      h: 12
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 48
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 14
+      y: 0
+      w: 10
+      h: 12
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 48
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: avatar
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  badgePosition: bottom right
+  alignment: right
+  caption: Management
+  badgeText: ''
+actions: {}
+slots: []

@@ -1,0 +1,53 @@
+id: '17159343650760.2508516454378613'
+kind: workflow
+name: fetchUsersTasks
+nameConfigured: true
+steps:
+  - id: '17159370095150.380185730912338'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17159410418290.9153468972992058'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17159369305190.23097078020157968'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17159260174120.29292159168518705'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.fetchUsersTasks.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.fetchUsersTasks.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.fetchUsersTasks.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

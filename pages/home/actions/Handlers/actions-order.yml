@@ -1,0 +1,4 @@
+- handlePageLoad
+- handleActionButtonClick
+- handleTaskSubmitButtonClick
+- handleUnassignTaskButtonClick

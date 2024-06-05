@@ -1,0 +1,54 @@
+id: '17162027399340.408448265351119'
+definitionId: button
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 0
+      w: 8
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17159239748650.3599174677719028'
+      x: 18
+      y: 0
+      w: 6
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: unassignTaskButton
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Unassign
+  status:
+    value: primary
+    dataValue: primary
+    withData: false
+parentSlotId: '17162027399340.6445242737766728'
+index: 0
+actions:
+  buttonClick:
+    - action: '17159418511320.291606378988591'
+      paramCode: |-
+        {
+          taskId: {{item.id}}
+        }
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+slots: []

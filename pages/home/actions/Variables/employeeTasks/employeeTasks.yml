@@ -1,0 +1,18 @@
+id: '17159369305190.23097078020157968'
+kind: store_item
+name: employeeTasks
+nameConfigured: true
+steps: []
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17159260079310.8002603686079979'
+storeItem:
+  value: '[]'
+  valueType: array
+  initialValue: '[]'
+  version: 1
+config:
+  preserveStateOnPageChange: false
+selected: false
+configured: true

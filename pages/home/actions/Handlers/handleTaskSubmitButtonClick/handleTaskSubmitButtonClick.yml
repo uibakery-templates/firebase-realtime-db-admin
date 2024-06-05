@@ -1,0 +1,38 @@
+id: '17159451645470.5287626331663051'
+kind: workflow
+name: handleTaskSubmitButtonClick
+nameConfigured: true
+steps:
+  - id: '17159451690010.05252059286107191'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+parentId: '17159260281600.19106133925096191'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleTaskSubmitButtonClick.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleTaskSubmitButtonClick.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleTaskSubmitButtonClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

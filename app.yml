@@ -1,0 +1,16 @@
+metadata:
+  favicon: ''
+  code: "<style>\n  .tasks-card > nb-card >  nb-card-header svg{\n  \tfill: var(--color-basic-100) !important;\n  }\n</style>"
+  title: Firebase Realtime DB Admin
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: true
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions:
+    appLoad: []
+    appData: []
+  gridVersion: 2
+  density: compact
+internalType: project

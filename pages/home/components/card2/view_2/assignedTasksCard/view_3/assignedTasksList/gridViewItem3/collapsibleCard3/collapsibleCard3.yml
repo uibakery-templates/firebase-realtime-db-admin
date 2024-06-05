@@ -1,0 +1,82 @@
+id: '17162027399340.6768929664228844'
+definitionId: collapsibleCard
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 11
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    accent:
+      value: default
+      dataValue: '#ED832B'
+      withData: false
+    backgroundColor:
+      value: default
+      dataValue: default
+      withData: false
+    status:
+      value: default
+      dataValue: ''
+      withData: false
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 11
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  heightMode: auto
+  name: collapsibleCard3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showFooter: true
+  collapsedState: 'true'
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+parentSlotId: '17162027399340.4926194779042754'
+index: 0
+actions:
+  collapsedChanged: []
+  init: []
+  cardClick: []
+slots:
+  - id: '17162027399340.3248650930372807'
+    name: header
+    children:
+      - taskTitle.yml
+  - id: '17162027399340.6445242737766728'
+    name: footer
+    children:
+      - unassignTaskButton.yml
+  - id: '17162027399340.7124273108701196'
+    name: views
+    children:
+      - view_7/view_7.yml

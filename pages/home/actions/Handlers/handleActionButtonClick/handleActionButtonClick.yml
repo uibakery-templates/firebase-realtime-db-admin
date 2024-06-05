@@ -1,0 +1,38 @@
+id: '17159313070140.6980342977690244'
+kind: workflow
+name: handleActionButtonClick
+nameConfigured: true
+steps:
+  - id: '17159313129100.7621059143770639'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleActionButtonClick.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleActionButtonClick.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleActionButtonClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
+parentId: '17159260281600.19106133925096191'
